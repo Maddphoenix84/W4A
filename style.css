@@ -26,8 +26,18 @@ body {
     border-color: aqua;
     border-style: solid;
     margin: 8px 8px;
-}
-
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-columns: repeat(auto-fit, minmax (767px, 1fr)); */
+    }
+    @media only screen and (max-width: 767px ) {
+        .header{
+            background-color:yellow ;
+        }
+    }
+     
+        
+    
 
 .content1 {
     background-color: brown;
@@ -36,9 +46,17 @@ body {
     border-color: magenta;
     border-style: dashed;
     margin: 10px 10px;
-
+    display: grid;
      
 }
+@media only screen and (max-width: 767px){
+    .content1{background-color: cornflowerblue;}
+    .para {display: none;}
+
+    
+}
+
+
 
 .content2 {
     background-color: chartreuse;
@@ -47,6 +65,7 @@ body {
     border-color: darkseagreen;
     border-style: ridge;
     margin: 10px 10px;
+    display: grid;
 }
 
 .footer{
@@ -55,4 +74,5 @@ body {
     border-width: 10px;
     border-style: dotted;
     margin: 8px 8px;
+    display: grid;
 }
