@@ -40,7 +40,8 @@ body {
     
 
 .content1 {
-    background-color: brown;
+    background-color: rgb(0, 0, 0);
+    color: crimson;
     padding: 5px 10px;
     border-width: 5px;
     border-color: magenta;
@@ -70,10 +71,14 @@ body {
     display: grid;
     grid-template-columns: auto auto;
 }
+
+
+
+
 .article1 {
     display: grid;
     grid-template-columns: auto auto;
-    background-color: darkkhaki;
+    background-color: rgb(0, 0, 0);
     color: crimson;
     
     
@@ -82,13 +87,14 @@ body {
 .article2 {
     display: grid;
     grid-template-columns: auto auto;
-    background-color: rgba(167, 22, 99, 0.74);
+    background-color: rgb(0, 0, 0);
+    color: crimson;
     font-style: italic;
     font-style: oblique;
 }
 
 .footer{
-    background-color: darkorange;
+     background-color: darkorange;
     padding: 5px 5px;
     border-width: 10px;
     border-style: dotted;
