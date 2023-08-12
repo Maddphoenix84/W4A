@@ -16,7 +16,7 @@ body {
 
 
 .header{
-    background-color: navajowhite;
+    background-color: rgb(0, 0, 0);
     color: crimson;
     font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -78,8 +78,10 @@ body {
 .article1 {
     display: grid;
     grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     background-color: rgb(0, 0, 0);
     color: crimson;
+    
     
     
 }
@@ -87,6 +89,7 @@ body {
 .article2 {
     display: grid;
     grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     background-color: rgb(0, 0, 0);
     color: crimson;
     font-style: italic;
