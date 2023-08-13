@@ -4,8 +4,8 @@
 
 
 body {
-    display: grid;
-    grid-template-rows: auto auto auto;
+    /* display: grid;
+    grid-template-rows: auto auto auto; */
     background-color: blue;
     padding: 10px 10px;
     border-width: 10px;
@@ -28,9 +28,13 @@ body {
     margin: 8px 8px;
     display: grid;
     grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
     
-    }
-    @media only screen and (max-width: 767px ) {
+
+    
+    
+    @media (max-width: 767px ) {
         .header{
             background-color:yellow ;
         }
@@ -39,7 +43,7 @@ body {
         
     
 
-.content1 {
+.content1{
     background-color: rgb(0, 0, 0);
     color: crimson;
     padding: 5px 10px;
@@ -48,11 +52,10 @@ body {
     border-style: dashed;
     margin: 10px 10px;
     display: grid;
-    grid-template-columns: auto auto;   
-
-     
+    grid-template-columns: auto auto; 
+    
 }
-@media only screen and (max-width: 767px){
+    @media (max-width: 767px){
     .content1{background-color: cornflowerblue;}
     .para {display: none;}
 
@@ -78,7 +81,6 @@ body {
 .article1 {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
     background-color: rgb(0, 0, 0);
     color: crimson;
     
@@ -89,11 +91,9 @@ body {
 .article2 {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
     background-color: rgb(0, 0, 0);
     color: crimson;
-    font-style: italic;
-    font-style: oblique;
+    
 }
 
 .footer{
@@ -102,5 +102,5 @@ body {
     border-width: 10px;
     border-style: dotted;
     margin: 8px 8px;
-    display: grid;
+    /* display: grid; */
 }
