@@ -120,6 +120,7 @@
     
     
     .article1 {
+        
         display: grid;
         grid-template-columns: auto auto;
         background-color:rgb(255, 0, 191);
