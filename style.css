@@ -1,221 +1,582 @@
 
-
-
-
-
-body {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    background-color: blue;
-    padding: 10px 10px;
-    border-width: 10px;
-    border-color: cornsilk;
-    border-style: double;
-    margin: 10px 10px ;
-    }
-
-
-.header{
-    background-color: rgb(0, 0, 0);
-    color: crimson;
-    font-size: xx-large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: oblique;
-    padding: 10px 10px;
-    border-width: 10px;
-    border-color: aqua;
-    border-style: solid;
-    margin: 8px 8px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.header:hover {
-    font-size:xx-large;
-    color: lightgreen;
-}
-
-    
-    
-    @media (max-width: 767px ) {
-        .header{
-            background-color:cornflowerblue ;
+/* 1. Mobile */
+@media (max-width: 767px) {
+    .para {display: none;}
+    body {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        background-color: rgb(255, 0, 191);
+        padding: 10px 10px;
+        border-width: 10px;
+        border-color: rgb(253, 203, 3);
+        border-style: double;
+        margin: 10px 10px ;
         }
+    
+    
+    .header{
+        background-color:rgb(255, 0, 191);;
+        color:black;
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        padding: 10px 10px;
+        border-width: 10px;
+        border-color: rgb(0, 26, 255);
+        border-style: solid;
+        margin: 8px 8px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-     
+    .header:hover {
+        font-size:xx-large;
+        color: lightgreen;
+    }
+    
+        
+        
+            
         
     
-
-.content1{
-    background-color: rgb(0, 0, 0);
-    color: crimson;
-    padding: 5px 10px;
-    border-width: 5px;
-    border-color: magenta;
-    border-style: dashed;
-    margin: 10px 10px;
-    display: grid;
-    grid-template-columns: auto auto; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    
-}
-
-.content1:hover{
-    font-size: large;
-    color:lightgreen;
-}
-    @media (max-width: 767px){
-    .content1{background-color: cornflowerblue;}
-    .para {display: none;}
-
-    
-}
-
-.content12{
-    background-color: rgb(0, 0, 0);
-    color: crimson;
-    padding: 5px 10px;
-    border-width: 5px;
-    border-color: magenta;
-    border-style: dashed;
-    margin: 10px 10px;
-    display: grid;
-    grid-template-columns: auto auto; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    
-}
-
-.content12:hover{
-    font-size: large;
-    color: lightgreen;
-}
-    @media (max-width: 767px){
-    .content12{background-color: cornflowerblue;}
-    .para {display: none;}
-
-    
-}
-
-
-.content13{
-    background-color: rgb(0, 0, 0);
-    color: crimson;
-    padding: 5px 10px;
-    border-width: 5px;
-    border-color: magenta;
-    border-style: dashed;
-    margin: 10px 10px;
-    display: grid;
-    grid-template-columns: auto auto; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    
-}
-
-.content13:hover {
-    font-size: large;
-    color: lightgreen;
-}
-    @media (max-width: 767px){
-    .content13{background-color: cornflowerblue;}
-    .para {display: none;}
-
-    
-}
-
-
-
-.content2 {
-    background-color: chartreuse;
-    padding: 10px 10px;
-    border-width: 7px;
-    border-color: darkseagreen;
-    border-style: ridge;
-    margin: 10px 10px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.content2:hover {
-    font-size: large;
-    color: lightgreen;
-}
-
-
-
-.article1 {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: rgb(0, 0, 0);
-    color: crimson;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .content1{
+        background-color:rgb(255, 0, 191);
+        color:black;
+        padding: 5px 10px;
+        border-width: 5px;
+        border-color: magenta;
+        border-style: dashed;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+        
     }
-
-    @media (max-width: 767px ) {
-        .article1{
-            background-color:cornflowerblue ;
-            color: black;
-        }
+    
+    .content1:hover{
+        font-size: large;
+        color:lightgreen;
     }
-        .article1:hover {
+      
+    
+    .content12{
+        background-color: rgb(255, 0, 191);
+        color: black;
+        padding: 5px 10px;
+        border-width: 5px;
+        border-color: magenta;
+        border-style: dashed;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .content12:hover{
         font-size: large;
         color: lightgreen;
     }
-
-
-.article2 {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: rgb(0, 0, 0);
-    color: crimson;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     
-}
-
-.article2:hover {
-    font-size: large;
-    color: lightgreen;
-}
-
-@media (max-width: 767px ) {
-    .article2{
-        background-color:cornflowerblue ;
+    .content13{
+        background-color: rgb(255, 0, 191);
         color: black;
+        padding: 5px 10px;
+        border-width: 5px;
+        border-color: magenta;
+        border-style: dashed;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .content13:hover {
+        font-size: large;
+        color: lightgreen;
+    }
+     
+    
+    
+    
+    .content2 {
+        background-color: chartreuse;
+        padding: 10px 10px;
+        border-width: 7px;
+        border-color: darkseagreen;
+        border-style: ridge;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .content2:hover {
+        font-size: large;
+        color: lightgreen;
+    }
+    
+    
+    
+    .article1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    
+        
+            .article1:hover {
+            font-size: large;
+            color: lightgreen;
+        }
+    
+    
+    .article2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .article2:hover {
+        font-size: large;
+        color: rgb(238, 144, 144);
+    }
+    
+    
+    
+    .footer{
+        background-color: darkorange;
+        padding: 5px 5px;
+        border-width: 10px;
+        border-style: dotted;
+        margin: 8px 8px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .medialinks {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .contact {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    }
+    
+    
+    .info {
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    }
+    
+    footer:hover {
+        font-size: large;
+        color: lightgreen;
     }
 }
 
-.footer{
-    background-color: darkorange;
-    padding: 5px 5px;
-    border-width: 10px;
-    border-style: dotted;
-    margin: 8px 8px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2. Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        background-color: blue;
+        padding: 10px 10px;
+        border-width: 10px;
+        border-color: cornsilk;
+        border-style: double;
+        margin: 10px 10px ;
+        }
+    
+    
+    .header{
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        padding: 10px 10px;
+        border-width: 10px;
+        border-color: aqua;
+        border-style: solid;
+        margin: 8px 8px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .header:hover {
+        font-size:xx-large;
+        color: lightgreen;
+    }
+    
+        
+        
+            
+        
+    
+    .content1{
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        padding: 5px 10px;
+        border-width: 5px;
+        border-color: magenta;
+        border-style: dashed;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .content1:hover{
+        font-size: large;
+        color:lightgreen;
+    }
+      
+    
+    .content12{
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        padding: 5px 10px;
+        border-width: 5px;
+        border-color: magenta;
+        border-style: dashed;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .content12:hover{
+        font-size: large;
+        color: lightgreen;
+    }
+    
+    .content13{
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        padding: 5px 10px;
+        border-width: 5px;
+        border-color: magenta;
+        border-style: dashed;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .content13:hover {
+        font-size: large;
+        color: lightgreen;
+    }
+     
+    
+    
+    
+    .content2 {
+        background-color: chartreuse;
+        padding: 10px 10px;
+        border-width: 7px;
+        border-color: darkseagreen;
+        border-style: ridge;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .content2:hover {
+        font-size: large;
+        color: lightgreen;
+    }
+    
+    
+    
+    .article1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    
+        
+            .article1:hover {
+            font-size: large;
+            color: lightgreen;
+        }
+    
+    
+    .article2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .article2:hover {
+        font-size: large;
+        color: rgb(238, 144, 144);
+    }
+    
+    
+    
+    .footer{
+        background-color: darkorange;
+        padding: 5px 5px;
+        border-width: 10px;
+        border-style: dotted;
+        margin: 8px 8px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .medialinks {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .contact {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    }
+    
+    
+    .info {
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    }
+    
+    footer:hover {
+        font-size: large;
+        color: lightgreen;
+    }
 }
-.medialinks {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+
+
+
+
+
+
+
+/* 3. Desktop */
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        background-color: blue;
+        padding: 10px 10px;
+        border-width: 10px;
+        border-color: cornsilk;
+        border-style: double;
+        margin: 10px 10px ;
+        }
+    
+    
+    .header{
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        padding: 10px 10px;
+        border-width: 10px;
+        border-color: aqua;
+        border-style: solid;
+        margin: 8px 8px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .header:hover {
+        font-size:xx-large;
+        color: lightgreen;
+    }
+    
+        
+        
+            
+        
+    
+    .content1{
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        padding: 5px 10px;
+        border-width: 5px;
+        border-color: magenta;
+        border-style: dashed;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .content1:hover{
+        font-size: large;
+        color:lightgreen;
+    }
+      
+    
+    .content12{
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        padding: 5px 10px;
+        border-width: 5px;
+        border-color: magenta;
+        border-style: dashed;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .content12:hover{
+        font-size: large;
+        color: lightgreen;
+    }
+    
+    .content13{
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        padding: 5px 10px;
+        border-width: 5px;
+        border-color: magenta;
+        border-style: dashed;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .content13:hover {
+        font-size: large;
+        color: lightgreen;
+    }
+     
+    
+    
+    
+    .content2 {
+        background-color: chartreuse;
+        padding: 10px 10px;
+        border-width: 7px;
+        border-color: darkseagreen;
+        border-style: ridge;
+        margin: 10px 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .content2:hover {
+        font-size: large;
+        color: lightgreen;
+    }
+    
+    
+    
+    .article1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    
+        
+            .article1:hover {
+            font-size: large;
+            color: lightgreen;
+        }
+    
+    
+    .article2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        
+    }
+    
+    .article2:hover {
+        font-size: large;
+        color: rgb(238, 144, 144);
+    }
+    
+    
+    
+    .footer{
+        background-color: darkorange;
+        padding: 5px 5px;
+        border-width: 10px;
+        border-style: dotted;
+        margin: 8px 8px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .medialinks {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .contact {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    }
+    
+    
+    .info {
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    }
+    
+    footer:hover {
+        font-size: large;
+        color: lightgreen;
+    }
 }
 
-.contact {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-}
 
 
-.info {
-    display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-}
-
-footer:hover {
-    font-size: large;
-    color: lightgreen;
-}
-  
