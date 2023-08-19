@@ -32,10 +32,21 @@
     .header:hover {
         font-size:xx-large;
         color: lightgreen;
+         transition-property: color;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out 2s;
     }
+    .header:active{
+         font-size: smaller;
+         color: rgb(22, 26, 241);
+         font-weight: 600;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         width: 400px;
+       
+    }
+        
+
     
-        
-        
             
         
     
@@ -57,8 +68,15 @@
     .content1:hover{
         font-size: large;
         color:lightgreen;
+        background-color: blue;
+        transition-property: color;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+
     }
-      
+       
+
+    
     
     .content12{
         background-color: rgb(255, 0, 191);
@@ -117,7 +135,26 @@
         color: lightgreen;
     }
     
+    @keyframes contentframe {
+        0%{
+            background-color: greenyellow;
+        }
+
+        66%{
+            background-color: chocolate;
+        }
+
+        100%{
+            background-color: aqua;
+        }
+    }
+
     
+    .content2:active{
+        animation-name: contentframe;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+    }
     
     .article1 {
         
@@ -233,8 +270,12 @@
         font-size:xx-large;
         color: black;
     }
+    .header:active {
+        font-size: larger;
+        color: gold;
+        font-family: monospace;
+    }
     
-        
         
             
         
@@ -380,12 +421,35 @@
     
     }
     
+@keyframes footer123 {
+    0%{
+        border-radius: 20px;
+        background-color: crimson;
+    }
+
+    50%{
+        border-radius: 50%;
+        background-color: lawngreen;
+    }
+
+    100%{
+        border-radius: 50px;
+        background-color: black;
+    }
+}
+
+
     footer:hover {
         font-size: large;
         color: lightgreen;
     }
 }
 
+    footer:active{
+        animation-name: footer123;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+    }
 
 
 
@@ -422,13 +486,37 @@
         grid-template-columns: auto auto;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+    
+    
+   }
+    @keyframes activeheader {
+        0% {
+            background-color: gold;
+            font-weight: 300;
+        }
+
+        50%{
+            background-color: darkred;
+            font-weight: 500;
+        }
+
+        100% {
+            background-color: aqua;
+            font-weight: 700;
+        }
+    }
+    
+
+
+
     .header:hover {
         font-size:xx-large;
         color: rgb(255, 255, 255);
+        animation-name: activeheader;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
     }
-    
-        
-        
+
             
         
     
@@ -443,14 +531,14 @@
         display: grid;
         grid-template-columns: auto auto; 
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        
     }
+    
     
     .content1:hover{
         font-size: large;
         color:rgb(255, 255, 255);
     }
-      
+    
     
     .content12{
         background-color: rgb(0, 0, 0);
